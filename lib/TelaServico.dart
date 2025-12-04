@@ -13,7 +13,7 @@ class _TelaServicoState extends State<TelaServico> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Serviços"),
-          backgroundColor: Colors.cyanAccent,
+          backgroundColor: Colors.tealAccent,
         ),
         body: SingleChildScrollView(
             child: Container(
