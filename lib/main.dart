@@ -54,7 +54,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
     return Scaffold(
       appBar: AppBar(
         title: Text("ATM Consultoria"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         child: Container(
