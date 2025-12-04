@@ -16,20 +16,29 @@ class _TelaEmpresaState extends State<TelaEmpresa> {
         backgroundColor: Colors.deepOrangeAccent,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-                padding: EdgeInsets.only(top:20, bottom: 20),
-                child: Row(
-                  children: [
-                    Image.asset('images/detalhe_empresa.png'),
-                    Text("Sobre a Empresa")
-                  ],
-                )
-            ),
-            Padding(
-              padding: EdgeInsets.all(20),
-              child: Text("""
+        child: Container(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Padding(
+                  padding: EdgeInsets.only(top:20, bottom: 20),
+                  child: Row(
+                    children: [
+                      Image.asset('images/detalhe_empresa.png'),
+                      Padding(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Text(
+                          "Sobre Nossa Empresa",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.black
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+              ),
+              Text("""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis risus tellus, sit amet semper magna blandit elementum. Vivamus ultrices gravida leo et placerat. Nulla consectetur urna non diam malesuada maximus. Phasellus consequat vulputate odio vel pharetra. Vivamus cursus interdum dolor, molestie auctor ligula scelerisque eget. Sed aliquam dictum nisi. In egestas eleifend sollicitudin. Sed tempor, enim dignissim dignissim molestie, velit urna tincidunt dui, at luctus urna mi sed diam. Aenean malesuada elit id purus faucibus luctus. Nullam ultrices sed diam quis gravida.
 
 Nulla porttitor dui sit amet felis iaculis, a posuere orci sollicitudin. Suspendisse id dolor justo. Suspendisse justo nibh, fermentum eu nisl mollis, laoreet varius elit. Curabitur id massa pharetra, tincidunt metus vitae, maximus sem. Mauris tempor, sem ac imperdiet aliquam, ipsum lacus convallis turpis, sed rhoncus tellus lacus sed nisl. Nullam id orci leo. Etiam convallis facilisis purus ut gravida. Aenean efficitur ligula id fermentum facilisis.
@@ -41,8 +50,8 @@ Vestibulum dui est, mollis in vestibulum quis, tincidunt at quam. Sed in ornare 
 Fusce eu rutrum justo. Ut aliquam erat in purus malesuada, vel convallis nulla maximus. Fusce ac mollis ex. Sed cursus enim ut consequat suscipit. Etiam id mauris eu libero placerat ornare. In molestie porta vehicula. Aliquam erat volutpat. Praesent scelerisque elit lobortis nunc bibendum sollicitudin. Integer lacus massa, bibendum tempor porttitor quis, vestibulum et libero. Donec vehicula semper accumsan.
                 """
               ),
-            ),
-          ],
+            ],
+          )
         )
       )
     );
